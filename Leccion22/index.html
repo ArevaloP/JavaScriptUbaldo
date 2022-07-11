@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Manejo de eventos con JavaScript</title>
+</head>
+<body>
+    <h1>Manejo de eventos con JavaScript</h1>
+    <br/>
+    <form action="" id="forma">
+    Nombre: <input type="text" id="nombre"/>
+    <br/>
+    <br/>
+    Apellido: <input type="text" id="apellido"/>
+</form>
+    <script>
+
+        const forma = document.getElementById('forma');
+
+        forma.addEventListener('focus', (event)=>{
+            event.target.style.background = 'pink';
+        }, true);
+
+        forma.addEventListener('blur', (event)=>{
+            event.target.style.background = 'white';
+        }, true);
+
+
+        // document.getElementById('nombre').addEventListener('focus', (event)=>{
+        //     event.target.style.background = 'pink';
+        // });
+        // document.getElementById('nombre').addEventListener('blur', (event)=>{
+        //     event.target.style.background = 'white';
+        // });
+
+        // document.getElementById('apellido').addEventListener('focus', cambiar);
+        // document.getElementById('apellido').addEventListener('blur', regresar);
+        // function cambiar(event){
+        //     let elemento = event.target
+        //     elemento.style.background = 'yellow';
+        // }
+        // function regresar(event){
+        //     event.target.style.background = 'white';
+        // }
+    </script>
+</body>
+</html>

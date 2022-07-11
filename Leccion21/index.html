@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de eventos con JavaScript</title>
+</head>
+<body>
+    <!-- <h1 onmouseover="rojo(this)" onmouseout="azul(this)">Manejo de Eventos con JavaScript</h1> -->
+    <h1 onmousedown="rojo(this)" onmouseup="azul(this)" onclick="verde(this)">Manejo de Eventos con JavaScript</h1>
+    <br/>
+    <!-- Nombre: <input type="text" onchange="convertir(this)"/> -->
+    <script>
+        // function convertir(nombreInput){
+        //     nombreInput.value = nombreInput.value.toUpperCase();
+        // }
+
+        function rojo(titulo){
+            titulo.style.color = 'red';
+            console.log("Rojo");
+        }
+
+        function azul(titulo){
+            titulo.style.color = 'blue';
+            console.log("Azul");
+        }
+
+        function verde(titulo){
+            titulo.style.color = 'green';
+            console.log("Verde");
+        }
+
+    </script>
+</body>
+</html>
